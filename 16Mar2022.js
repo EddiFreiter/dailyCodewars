@@ -14,6 +14,11 @@ function positiveSum(arr) {
     return sum
 }
 
+// Alternative solution (compact)
+function positiveSum(arr) {
+    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+ }
+
 // Test
 // const { assert } = require("chai")
 
@@ -26,3 +31,27 @@ function positiveSum(arr) {
 //     assert.strictEqual(positiveSum([-1,2,3,4,-5]),9);
 //     });
 //   });
+
+// Return negative
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+// Examples
+// makeNegative(1);    // return -1
+// makeNegative(-5);   // return -5
+// makeNegative(0);    // return 0
+// makeNegative(0.12); // return -0.12
+function makeNegative(num) {
+    // Code?
+  if (num <= 0){
+    return num
+  }else{
+    return -num
+  }
+}
+
+  // Test
+  describe("Tests", () => {
+    it("test", () => {
+  Test.assertEquals(makeNegative(42), -42);
+    });
+  });
