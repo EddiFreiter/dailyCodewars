@@ -1,6 +1,6 @@
 # ⭐ Daily Coding Challenges ⭐
 
-A repository with my daily Codewars solutions.
+A repository with my daily Codewars solutions.<br>
 
 ## 🔎 Purpose and Goals 🥅
 
@@ -18,11 +18,13 @@ Who does not love that!?
 
 My solutions will have the challenge name, description, my solution and test case. You can copy and paste and try it yourself.
 
-## 📈 Stats
+## 📈 My Stats
 
-Ranked: 7kyu
+**Ranked:** 7kyu
 
-Total Completed Kata: 12    
+**Total Completed Kata:** 12
+
+
 
 ![alt rank](https://www.codewars.com/users/pitchblack_84/badges/large)
 
