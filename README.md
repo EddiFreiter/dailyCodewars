@@ -5,10 +5,10 @@ A repository with my daily [Codewars](https://codewars.com) solutions.<br>
 ## 🔎 Purpose and Goals 🥅
 
 I love [Codewars](https://codewars.com) challenges. Once I start, I cannot stop.
-* I learn new skills
-* I challenge myself to finish every solution
-* I practice daily = repetition
-* I love a little [#100Devs](https://twitter.com/hashtag/100Devs) competition, it never hurts
+* I learn new skills 🏋🏻
+* I challenge myself to finish every solution 🎯
+* I practice daily = repetition 💪
+* I love a little [#100Devs](https://twitter.com/hashtag/100Devs) competition 🏁, it never hurts
 
 
 My intention with using [Codewars](https://codewars.com) katas is, to learn JavaScript well. By completing challenges I can learn and absorb proper syntax, new methods and troubleshooting skills, at the same time. It's a learning tool and it's **FUN**!
