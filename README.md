@@ -4,7 +4,7 @@ A repository with my daily Codewars solutions.
 
 ## 🔎 Purpose and Goals 🥅
 
-I love [Codewars](https://codewars.com) challenges. Once I start, I have a hard time stopping.<br>
+I love [Codewars](https://codewars.com) challenges. Once I start, I cannot stop.
 * Learn new skills
 * Challenge myself to finish every solution by using troubleshooting tools and technics
 * Practicing daily = repetition and getting familiar coding langauges
