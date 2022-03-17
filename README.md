@@ -5,7 +5,7 @@ A repository with my daily [Codewars](https://codewars.com) solutions.<br>
 ## 🔎 Purpose and Goals 🥅
 
 I love [Codewars](https://codewars.com) challenges. Once I start, I cannot stop.
-* I learn new skills 🏋🏻
+* I learn new skills 🏗️
 * I challenge myself to finish every solution 🎯
 * I practice daily = repetition 💪
 * I love a little [#100Devs](https://twitter.com/hashtag/100Devs) competition 🏁, it never hurts
@@ -17,7 +17,7 @@ Being part of the [#100Devs](https://twitter.com/hashtag/100Devs) group on [Code
 
 My solutions will have the challenge name, description, my solution and test case. Have a l👀k around.
 
-## 📈 My Stats
+## 🏆 My Stats
 
 **Ranked:** ![alt rank](https://www.codewars.com/users/pitchblack_84/badges/micro)
 
