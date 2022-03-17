@@ -19,10 +19,8 @@ My solutions will have the challenge name, description, my solution and test cas
 
 ## 📈 My Stats
 
-**Ranked:** 7kyu
+**Ranked:** ![alt rank](https://www.codewars.com/users/pitchblack_84/badges/micro)
 
 **Total Completed Kata:** 12
-
-<br>![alt rank](https://www.codewars.com/users/pitchblack_84/badges/micro)
 
 ### Happy learning!
