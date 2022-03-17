@@ -26,6 +26,6 @@ My solutions will have the challenge name, description, my solution and test cas
 
 
 
-![alt rank](https://www.codewars.com/users/pitchblack_84/badges/medium)
+![alt rank](https://www.codewars.com/users/pitchblack_84/badges/micro)
 
 ### Happy learning!
