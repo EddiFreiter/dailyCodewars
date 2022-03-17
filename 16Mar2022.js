@@ -20,17 +20,17 @@ function positiveSum(arr) {
  }
 
 // Test
-// const { assert } = require("chai")
+const { assert } = require("chai")
 
-// describe("Basic tests", () => {
-//   it("Testing for fixed tests", () => {
-//     assert.strictEqual(positiveSum([1,2,3,4,5]),15);
-//     assert.strictEqual(positiveSum([1,-2,3,4,5]),13);
-//     assert.strictEqual(positiveSum([]),0);
-//     assert.strictEqual(positiveSum([-1,-2,-3,-4,-5]),0);
-//     assert.strictEqual(positiveSum([-1,2,3,4,-5]),9);
-//     });
-//   });
+describe("Basic tests", () => {
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(positiveSum([1,2,3,4,5]),15);
+    assert.strictEqual(positiveSum([1,-2,3,4,5]),13);
+    assert.strictEqual(positiveSum([]),0);
+    assert.strictEqual(positiveSum([-1,-2,-3,-4,-5]),0);
+    assert.strictEqual(positiveSum([-1,2,3,4,-5]),9);
+    });
+  });
 
 // Return negative
 // In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
@@ -55,3 +55,33 @@ function makeNegative(num) {
   Test.assertEquals(makeNegative(42), -42);
     });
   });
+
+
+// Powers of 2
+// Complete the function that takes a non-negative integer n as input, and returns a list of all the powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+
+// Examples
+// n = 0  ==> [1]        # [2^0]
+// n = 1  ==> [1, 2]     # [2^0, 2^1]
+// n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+
+function powersOfTwo(n){
+    num = []
+    for (i = 0; i <= n; i++){
+        num.push(Math.pow(2,i))
+    }
+    return num
+  }
+
+// Test
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
+
+describe("Basic Tests", function(){
+  it("Testing for fixed tests", () => {
+    assert.deepEqual(powersOfTwo(0), [1])
+    assert.deepEqual(powersOfTwo(1), [1, 2])
+    assert.deepEqual(powersOfTwo(4), [1, 2, 4, 8, 16])
+  })
+});
