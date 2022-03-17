@@ -24,6 +24,6 @@ Ranked: 7kyu
 
 Total Completed Kata: 12    
 
-<iframe src=https://www.codewars.com/users/pitchblack_84/badges/large></iframe>
+![alt rank](https://www.codewars.com/users/pitchblack_84/badges/large)
 
 ### Happy learning!
