@@ -444,7 +444,7 @@ function litres(time) {
   return Math.trunc(drink);
 }
 
-// Efficent Solution
+// Other Solution
 function litres(time) {
   return Math.floor(time * 0.5);
 }
