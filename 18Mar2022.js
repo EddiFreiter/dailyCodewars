@@ -1,105 +1,108 @@
-// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// // Returning Strings
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Returning Strings
 
-// // Make a function that will return a greeting statement that uses an input;
-// // your program should return, "Hello, <name> how are you doing today?".
+// Make a function that will return a greeting statement that uses an input;
+// your program should return, "Hello, <name> how are you doing today?".
 
-// // [Make sure you type the exact thing I wrote or the program may not execute properly]
+// [Make sure you type the exact thing I wrote or the program may not execute properly]
 
-// // My Solution
-// function greet(name){
-//     return `Hello, ${name} how are you doing today?`;
-//   }
+// My Solution
+function greet(name){
+    return `Hello, ${name} how are you doing today?`;
+  }
 
-// // TEST
-// const chai = require("chai");
-// const assert = chai.assert;
-// chai.config.truncateThreshold=0;
+// TEST
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
 
-// describe("Basic tests",() =>{
-//   it("Testing for fixed tests", () => {
-//     assert.strictEqual(greet("Ryan"), "Hello, Ryan how are you doing today?");
-//     assert.strictEqual(greet("Shingles"), "Hello, Shingles how are you doing today?");
-//   })
-// })
+describe("Basic tests",() =>{
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(greet("Ryan"), "Hello, Ryan how are you doing today?");
+    assert.strictEqual(greet("Shingles"), "Hello, Shingles how are you doing today?");
+  })
+})
 
 
-// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// // Convert number to reversed array of digits
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Convert number to reversed array of digits
 
-// // Given a random non-negative number, you have to return the
-// // digits of this number within an array in reverse order.
+// Given a random non-negative number, you have to return the
+// digits of this number within an array in reverse order.
 
-// // Example:
-// // 348597 => [7,9,5,8,4,3]
-// // 0 => [0]
+// Example:
+// 348597 => [7,9,5,8,4,3]
+// 0 => [0]
 
-// // My Solution
-// function digitize(n) {
-//     //code here
-//     let arr = Array.from(n.toString()).reverse()
-//     let len = arr.length
-//     i = 0
-//     while(i < len) {
-//         arr.push(parseInt(arr[0]))
-//         arr.shift(0,1)
-//         i += 1
-//     }
-//     return arr
-//   }
+// My Solution
+function digitize(n) {
+    //code here
+    let arr = Array.from(n.toString()).reverse()
+    let len = arr.length
+    i = 0
+    while(i < len) {
+        arr.push(parseInt(arr[0]))
+        arr.shift(0,1)
+        i += 1
+    }
+    return arr
+  }
 
-// Better Solution
-// function digitize(n) {
-//     return String(n).split('').map(Number).reverse()
-//   }
+Better Solution
+function digitize(n) {
+    return String(n).split('').map(Number).reverse()
+  }
 
-// // Test
-// const chai = require("chai");
-// const assert = chai.assert;
-// chai.config.truncateThreshold=0;
+// Test
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
 
-// describe("Basic tests", () => {
-//   it("Testing for fixed tests", () => {
-//     assert.deepEqual(digitize(35231),[1,3,2,5,3]);
-//     assert.deepEqual(digitize(0),[0]);
-//   });
-// });
+describe("Basic tests", () => {
+  it("Testing for fixed tests", () => {
+    assert.deepEqual(digitize(35231),[1,3,2,5,3]);
+    assert.deepEqual(digitize(0),[0]);
+  });
+});
 
-// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// // Abbreviate a Two Word Name
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Abbreviate a Two Word Name
 
-// // Write a function to convert a name into initials. This kata strictly
-// // takes two words with one space in between them.
+// Write a function to convert a name into initials. This kata strictly
+// takes two words with one space in between them.
 
-// // The output should be two capital letters with a dot separating them.
+// The output should be two capital letters with a dot separating them.
 
-// // It should look like this:
+// It should look like this:
 
-// // Sam Harris => S.H
+// Sam Harris => S.H
 
-// // patrick feeney => P.F
+// patrick feeney => P.F
 
-// // My Solution
+// My Solution
 function abbrevName(name){
     name = name.split(" ")
-    name.forEach(element => {
-        element.
-    });
+    let FirstName = name[0].slice(0,1).toUpperCase()
+    let LastName = name[1].slice(0,1).toUpperCase()
 
-    return name
+    return FirstName+"."+LastName
 }
 
-// // TEST
-// const chai = require("chai");
-// const assert = chai.assert;
-// chai.config.truncateThreshold=0;
+Better Solution
+function abbrevName(name){
+    return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
+  }
+// TEST
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
 
-// describe("Basic tests", () => {
-//   it("Testing for fixed tests", () => {
-//     assert.strictEqual(abbrevName("Sam Harris"), "S.H");
-//     assert.strictEqual(abbrevName("Patrick Feenan"), "P.F");
-//     assert.strictEqual(abbrevName("Evan Cole"), "E.C");
-//     assert.strictEqual(abbrevName("P Favuzzi"), "P.F");
-//     assert.strictEqual(abbrevName("David Mendieta"), "D.M");
-//   });
-// });
+describe("Basic tests", () => {
+  it("Testing for fixed tests", () => {
+    assert.strictEqual(abbrevName("Sam Harris"), "S.H");
+    assert.strictEqual(abbrevName("Patrick Feenan"), "P.F");
+    assert.strictEqual(abbrevName("Evan Cole"), "E.C");
+    assert.strictEqual(abbrevName("P Favuzzi"), "P.F");
+    assert.strictEqual(abbrevName("David Mendieta"), "D.M");
+  });
+});
