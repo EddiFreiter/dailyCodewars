@@ -80,8 +80,7 @@ describe("Basic tests", () => {
 // The conversion rate you should use is 6.75 CNY for every 1 USD. 
 // All numbers should be represented as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
 
-// My 
-Solution
+// My Solution
 function usdcny(usd) {
   return (usd*6.75).toFixed(2) + " Chinese Yuan"
 }
