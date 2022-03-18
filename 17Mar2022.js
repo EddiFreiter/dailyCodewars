@@ -218,11 +218,11 @@ class SmallestIntegerFinder {
   }
 
 // Better solution
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      return Math.min(...args)
-    }
-  }
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min(...args)
+//     }
+//   }
 
 // TEST
 const chai = require("chai");
