@@ -182,3 +182,29 @@ describe("Basic tests", ()=>{
     assert.deepEqual(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]); 
   });
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Convert a Boolean to a String
+// Implement a function which convert the given boolean value into its string representation.
+
+// Note: Only valid inputs will be given.
+
+// My Solution
+function booleanToString(b){
+    //your code here
+    return (b === true) ? 'true' : 'false'
+  }
+
+Other Solution
+function booleanToString(b){
+    return b.toString();
+  }
+
+// TEST
+describe("Tests", () => {
+    it("test", () => {
+  Test.assertEquals(booleanToString(true), "true", 'When we pass in true, we want the string "true" as output');
+  Test.assertEquals(booleanToString(false), "false", 'When we pass in false, we want the string "false" as output');
+    });
+  });
