@@ -465,3 +465,107 @@ describe('Fixed tests', () => {
     assert.strictEqual(litres(0), 0, 'should return 0 litres');
   });
 });
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Century From Year
+
+// Introduction
+
+// The first century spans from the year 1 up to and including the year 100, 
+// the second century - from the year 101 up to and including the year 200, etc.
+// Task
+
+// Given a year, return the century it is in.
+// Examples
+
+// 1705 --> 18
+// 1900 --> 19
+// 1601 --> 17
+// 2000 --> 20
+
+// My Solution
+function century(year) {
+  // Finish this :)
+  return Math.ceil(year/100);
+}
+
+// TEST
+describe("Tests", () => {
+  it("test", () => {
+Test.assertEquals(century(1705), 18, 'Testing for year 1705');
+Test.assertEquals(century(1900), 19, 'Testing for year 1900');
+Test.assertEquals(century(1601), 17, 'Testing for year 1601');
+Test.assertEquals(century(2000), 20, 'Testing for year 2000');
+Test.assertEquals(century(89), 1, 'Testing for year 89');
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Convert a String to a Number!
+
+// Description
+// We need a function that can transform a string into a number.
+// What ways of achieving this do you know?
+
+// Note: Don't worry, all inputs will be strings, and every string
+// is a perfectly valid representation of an integral number.
+// Examples
+
+// "1234" --> 1234
+// "605"  --> 605
+// "1405" --> 1405
+// "-7" --> -7
+
+// My Solution
+var stringToNumber = function(str){
+  // put your code here
+  return Number(str);
+}
+
+// Other Solution
+var stringToNumber = function(str){
+  return parseInt(str);
+}
+
+// TEST
+describe( "stringToNumber", function(){
+  it( "should work for the examples" , function(){
+    Test.assertEquals(stringToNumber("1234"),1234)
+    Test.assertEquals(stringToNumber("605"), 605)
+    Test.assertEquals(stringToNumber("1405"),1405)
+    Test.assertEquals(stringToNumber("-7"),  -7)
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Basic Mathematical Operations
+
+// Your task is to create a function that does four basic mathematical operations.
+
+// The function should take three arguments - operation(string/char), value1(number), value2(number).
+// The function should return result of numbers after applying the chosen operation.
+// Examples(Operator, value1, value2) --> output
+
+// ('+', 4, 7) --> 11
+// ('-', 15, 18) --> -3
+// ('*', 5, 5) --> 25
+// ('/', 49, 7) --> 7
+
+// My Solution
+function basicOp(operation, value1, value2){
+  return eval(value1 + operation + value2)
+}
+
+// TEST
+describe("Tests", () => {
+  it("test", () => {
+console.log("Basic tests\n");
+Test.assertSimilar(basicOp('+', 4, 7), 11);
+Test.assertSimilar(basicOp('-', 15, 18), -3);
+Test.assertSimilar(basicOp('*', 5, 5), 25);
+Test.assertSimilar(basicOp('/', 49, 7), 7);
+  });
+});
