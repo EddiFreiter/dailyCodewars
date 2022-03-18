@@ -1,6 +1,6 @@
 # ⭐ Daily JavaScript Coding Challenges ⭐
 
-A repository with my daily [Codewars](https://codewars.com) solutions.<br>
+A repository with my daily [Codewars](https://codewars.com) JavaScript solutions.<br>
 
 ## 🔎 Purpose and Goals 🥅
 
