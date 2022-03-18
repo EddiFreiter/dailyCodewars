@@ -21,6 +21,6 @@ My solutions have the challenge name, description, my solution and test case. Ha
 
 **Ranked:** ![alt rank](https://www.codewars.com/users/pitchblack_84/badges/micro)
 
-**Total Completed Kata:** 26
+**Total Completed Kata:** 28
 
 ### Happy learning!
