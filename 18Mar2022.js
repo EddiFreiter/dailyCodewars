@@ -124,6 +124,13 @@ describe("Basic tests", () => {
 // My Solution
 function findNeedle(haystack) {
     // your code here
+    let i = haystack.findIndex(element => element === 'needle')
+    return `found the needle at position ${i}`
+  }
+
+Simpler Solution
+function findNeedle(haystack) {
+    return "found the needle at position " + haystack.indexOf("needle");
   }
 
 // TEST
