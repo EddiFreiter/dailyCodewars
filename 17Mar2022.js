@@ -280,3 +280,188 @@ describe('summation', function () {
   })
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Square(n) Sum
+
+// Complete the square sum function so that it squares each 
+// number passed into it and then sums the results together.
+
+// For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+// My Solution
+function squareSum(numbers){
+  let sum = 0
+  numbers.forEach( num => {
+      sum += Math.pow(num,2)
+  })
+  return sum
+}
+
+// Different solution
+function squareSum(numbers){
+  return numbers.reduce((sum,num) => sum + (num * num), 0);
+}
+
+// TEST
+describe("Tests", () => {
+  it("test", () => {
+Test.assertEquals(squareSum([1,2]), 5)
+Test.assertEquals(squareSum([0, 3, 4, 5]), 50)
+Test.assertEquals(squareSum([]), 0)
+});
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Remove String Spaces
+// Simple, remove the spaces from the string, then return the resultant string.
+
+// My Solution
+function noSpace(x){
+  return x.split(" ").join("")
+}
+
+// Different Solution
+
+
+// TEST
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
+
+describe("Basic tests",() =>{
+  it("Fixed Tests", () => {
+    assert.strictEqual(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'), '8j8mBliB8gimjB8B8jlB');
+    assert.strictEqual(noSpace('8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd'), '88Bifk8hB8BB8BBBB888chl8BhBfd'); 
+    assert.strictEqual(noSpace('8aaaaa dddd r     '), '8aaaaaddddr'); 
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Counting sheep...
+
+// Consider an array/list of sheep where some sheep may be missing from their place.
+// We need a function that counts the number of sheep present in the array (true means present).
+
+// For example,
+
+// [true,  true,  true,  false,
+//   true,  true,  true,  true ,
+//   true,  false, true,  false,
+//   true,  false, false, true ,
+//   true,  true,  true,  true ,
+//   false, false, true,  true]
+
+// The correct answer would be 17.
+
+// Hint: Don't forget to check for bad values like null/undefined.
+
+// My Solution
+function countSheeps(arrayOfSheep) {
+  // TODO May the force be with you
+  let sheep = 0
+  arrayOfSheep.forEach( present => {
+    if ((present !== null || present !== undefined) && present === true) {
+      sheep += 1
+    }
+  })
+  return sheep
+}
+
+Elegant Solution
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+
+// TEST
+describe("Tests", () => {
+  it("test", () => {
+var array1 = [true,  true,  true,  false,
+              true,  true,  true,  true ,
+              true,  false, true,  false,
+              true,  false, false, true ,
+              true,  true,  true,  true ,
+              false, false, true,  true ];
+              
+Test.assertEquals(countSheeps(array1), 17, "There are 17 sheeps in total")
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Function 1 - hello world
+
+// Description:
+// Make a simple function called greet that returns the most-famous "hello world!".
+// Style Points
+
+// Sure, this is about as easy as it gets. But how clever can you be to create 
+// the most creative hello world you can think of? What is a "hello world" 
+// solution you would want to show your friends?
+
+// My Solution
+function greet() {
+  return "hello world!";
+  }
+
+// Other Solution
+const greet = () => "hello world!";
+
+// TEST
+const assert = require("chai").assert;
+
+describe("Testing function", function() {
+  it("Is it a function?", function() {
+    assert.strictEqual(typeof greet, "function", "greet should be a function");
+  });
+  it("Correct return-value?", function() {
+    assert.strictEqual(greet(), "hello world!");
+  });
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Keep Hydrated!
+
+// Nathan loves cycling.
+
+// Because Nathan knows it is important to stay hydrated, 
+// he drinks 0.5 litres of water per hour of cycling.
+
+// You get given the time in hours and you need to return the 
+// number of litres Nathan will drink, rounded to the smallest value.
+
+// For example:
+// time = 3 ----> litres = 1
+// time = 6.7---> litres = 3
+// time = 11.8--> litres = 5
+
+// My Solution
+function litres(time) {
+  time = Math.trunc(time)
+  let drink = time * 0.5
+  return Math.trunc(drink);
+}
+
+// Efficent Solution
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
+
+// TEST
+const chai = require("chai");
+const assert = chai.assert;
+chai.config.truncateThreshold=0;
+
+describe('Fixed tests', () => {
+  it('Tests', () => {
+    assert.strictEqual(litres(2), 1, 'should return 1 litre');
+    assert.strictEqual(litres(1.4), 0, 'should return 0 litres');
+    assert.strictEqual(litres(12.3), 6, 'should return 6 litres');
+    assert.strictEqual(litres(0.82), 0, 'should return 0 litres');
+    assert.strictEqual(litres(11.8), 5, 'should return 5 litres');
+    assert.strictEqual(litres(1787), 893, 'should return 893 litres');
+    assert.strictEqual(litres(0), 0, 'should return 0 litres');
+  });
+});
