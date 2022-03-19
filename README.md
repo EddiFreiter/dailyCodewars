@@ -15,7 +15,7 @@ My intention with using [Codewars](https://codewars.com) katas is, to learn Java
 
 Being part of the [#100Devs](https://twitter.com/hashtag/100Devs) group on [Codewars](https://codewars.com) also spices things up with a little friendly competition! Who does not love that!?
 
-My solutions have the challenge name, description, my solution and test case. Have a l👀k around.
+My solutions have the challenge name, description, my solution and test case. Have a 👀 around.
 
 ## 🏆 My Stats
 
