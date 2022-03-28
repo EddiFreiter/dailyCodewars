@@ -14,9 +14,19 @@
 
 // // My Solution
 function countPositivesSumNegatives(input) {
-    return ?;
+    if (input != null && input.length != 0) {
+        sumPos = 0
+        sumNeg = 0
+        input.forEach(x => (x>0) ? sumPos += 1 : sumNeg += x)
+        return [sumPos,sumNeg];
+    }
+    return []; 
 }
-// https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript
+
+// Other, complet Solution
+function countPositivesSumNegatives(input) {
+    return input && input.length ? [input.filter(p => p > 0).length, input.filter(n => n < 0).reduce((a, b) => a + b, 0)] : [];
+}
 
 // // TEST
 // const chai = require("chai");
